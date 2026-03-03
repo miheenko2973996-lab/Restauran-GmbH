@@ -70,6 +70,7 @@
             this.labelCard5Mit = new System.Windows.Forms.Label();
             this.labelCard5Kat = new System.Windows.Forms.Label();
             this.labelCard5Tit = new System.Windows.Forms.Label();
+            this.directorySearcher1 = new System.DirectoryServices.DirectorySearcher();
             this.panelOben.SuspendLayout();
             this.panel1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -539,6 +540,12 @@
             this.labelCard5Tit.Text = "Tisch 5 vorbereiten";
             this.labelCard5Tit.Click += new System.EventHandler(this.label4_Click);
             // 
+            // directorySearcher1
+            // 
+            this.directorySearcher1.ClientTimeout = System.TimeSpan.Parse("-00:00:01");
+            this.directorySearcher1.ServerPageTimeLimit = System.TimeSpan.Parse("-00:00:01");
+            this.directorySearcher1.ServerTimeLimit = System.TimeSpan.Parse("-00:00:01");
+            // 
             // ManagerAufgabe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -625,5 +632,6 @@
         private System.Windows.Forms.Label labelCard5Mit;
         private System.Windows.Forms.Label labelCard5Kat;
         private System.Windows.Forms.Label labelCard5Tit;
+        private System.DirectoryServices.DirectorySearcher directorySearcher1;
     }
 }
